@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+table tbody tr td{
+  padding: 5px; 
+  border: 1px solid #ccc;
+}
+
+table thead tr th{
+  padding: 7px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+table thead tr th.active{
+  color: #ff9800;
+}
+
+table thead tr th.active::after{
+  font-weight: bold;
+  color: green;
+}
+
+table thead tr th.active.desc::after{
+  content: '▾';
+}
+table thead tr th.active.asc::after{
+  content: '▴';
+}
+
+input.full{
+  width: 100%;
+  padding: 5px;
+}
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.bg-high{
+  background-color: #eee;
+}
+
+.search-form input, .search-form button{
+  padding: 7px;
+}
+
+.search-form input{
+  width: 300px;
+}
+
+.search-form button{
+  width: 100px;
+}
